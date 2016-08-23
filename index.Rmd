@@ -1,0 +1,63 @@
+---
+title       : first slides
+subtitle    : in slidify
+author      : van Amsterdam
+job         : student
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax, bootstrap, quiz]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+<!-- other YAML: -->
+<!-- logo    : my_logo.png -->
+<!-- url     : -->
+<!--     assets: ../assets -->
+<!-- highlighter : highlight.js  # {highlight.js, prettify, highlight} -->
+<!-- hitheme     : zenburn       #  -->
+
+
+## Read-And-Delete
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+
+--- .class #id 
+
+## Math example
+<!-- uses latex style -->
+$x^2$
+$$x^2$$
+$$\frac{-b \pm \sqrt{b^2 - 4 a c}}{2a}$$
+
+
+--- &radio
+
+## Question 1
+
+```{r, echo = F}
+data("airquality")
+names(airquality)
+```
+
+What is 1 + 1?
+
+1. 1
+2. _2_
+3. 3
+4. 4
+
+*** .hint
+This is a hint
+
+*** .explanation
+This is an explanation
+
+
+
+--- 
+
+## last slide
+
